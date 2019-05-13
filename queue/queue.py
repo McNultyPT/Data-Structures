@@ -9,9 +9,12 @@ class Queue:
     self.storage.append(item)
   
   def dequeue(self):
-    self.storage.pop(0)
+    if self.len() == 0:
+      return
+    else:
+      front_item = self.storage[0]
+      del self.storage[0]
+      return front_item
 
   def len(self):
-    pass
-
-# initial push
+    return len(self.storage)
