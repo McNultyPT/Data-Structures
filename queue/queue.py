@@ -13,3 +13,5 @@ class Queue:
 
   def len(self):
     pass
+
+# initial push
